@@ -12,7 +12,7 @@ public class PostmanEchoTest {
         // Предусловия
         given()
                 .baseUri("https://postman-echo.com")
-                .body("Netologi") // отправляемые данные (заголовки и query можно выставлять аналогично)
+                .body("Netology") // отправляемые данные (заголовки и query можно выставлять аналогично)
                 // Выполняемые действия
                 .when()
                 .post("/post")
