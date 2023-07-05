@@ -2,15 +2,20 @@ plugins {
     id 'java'
 }
 
-group 'ru.negology'
+group 'ru.netology'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation 'io.rest-assured:rest-assured:4.3.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.6.1'
+}
+
+test {
+    useJUnitPlatform()
 }
